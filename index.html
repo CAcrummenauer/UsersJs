@@ -48,7 +48,7 @@
                 <p>cezar.augusto.web@gmail.com</p>
                 <p>23 anos de idade</p>
                 <a class="modal-trigger secondary-content btn-floating btn btn-small cyan pulse tooltipped"
-                    data-position="left" data-tooltip="Editar este usuário" href="#modal1">
+                    data-position="left" data-tooltip="Gerenciar este usuário" href="#modal1">
                     <i class="material-icons">edit</i>
                 </a>
             </li>
@@ -57,7 +57,7 @@
                 <span class="title">Title</span>
                 <p>First Line</p>
                 <a class="modal-trigger secondary-content btn-floating btn btn-small cyan pulse tooltipped"
-                    data-position="left" data-tooltip="Editar este usuário" href="#modal1">
+                    data-position="left" data-tooltip="Gerenciar este usuário" href="#modal1">
                     <i class="material-icons">edit</i>
                 </a>
             </li>
@@ -68,18 +68,45 @@
 
     <!-- Modal Structure -->
     <div id="modal1" class="modal bottom-sheet">
+
         <div class="modal-content">
+
+
+
+
             <h5>Editar o usuário</h5>
-            <p>A bunch of text</p>
-            <a class="modal-trigger secondary-content" href="#modal1">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">Nome completo</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="icon_telephone" type="tel" class="validate">
+                            <label for="icon_telephone">E-mail</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="icon_telephone" type="tel" class="validate">
+                            <label for="icon_telephone">E-mail</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <a onclick="M.toast({html: 'Tarefa removida', displayLength: 6000, outDuration: 2000})" class="modal-trigger secondary-content btn-floating btn btn-large red pulse tooltipped"
+                data-position="left" data-tooltip="Esuário removido com sucesso" href="#modal1">
                 <i class="material-icons">delete_forever</i>
             </a>
-            <a onclick="M.toast({html: 'Tarefa removida', displayLength: 6000, outDuration: 2000})" class="btn pulse">Remover
-                tarefa!</a>
+            <a class="waves-effect waves-light btn-small">Atualizar
+            </a>
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Sair</a>
         </div>
+
     </div>
 
 
